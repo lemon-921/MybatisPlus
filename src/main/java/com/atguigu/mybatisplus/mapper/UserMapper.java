@@ -33,4 +33,6 @@ public interface UserMapper extends BaseMapper<User> {
      Page<User> selectPageVo(@Param("page") Page<User> page,@Param("age") Integer age);
 
     int updateAgeAndSex(@Param("age") int age, @Param("sex") SexEnum sex);
+
+    int updateEmailAndAge(@Param("email") String email, @Param("age") int age);
 }

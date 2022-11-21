@@ -19,5 +19,10 @@
      set age = #{age},
      sex = #{sex}
     </update>
+    <update id="updateEmailAndAge">
+update user
+ set email = #{email,jdbcType=VARCHAR},
+ age = #{age}
+</update>
 
 </mapper>
